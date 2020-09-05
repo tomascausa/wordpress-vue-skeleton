@@ -1,12 +1,24 @@
 import _ from 'lodash';
+import Vue from 'vue';
+import vuetify from '../js/plugins/vuetify';
 
-function component() {
-  const element = document.createElement('div');
+window.Vue = require('vue');
+window.moment = require('moment');
 
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+// Vue Components
+// require('./components/components');
 
-  return element;
-}
+// Global Event Bus
+window.Events = new Vue();
 
-document.body.appendChild(component());
+// Add the router to every vue instance.
+// Vue.prototype.router = router;
+// Vue.prototype.goBack = () => {
+//     router.go(-1);
+// };
+
+const app = new Vue({
+    el: '#app',
+    components: {},
+    vuetify
+});
