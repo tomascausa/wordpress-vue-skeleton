@@ -1,18 +1,4 @@
-// const path = require('path');
-
-// module.exports = {
-//   entry: './src/index.js',
-//   output: {
-//     filename: 'main.js',
-//     path: path.resolve(__dirname, 'dist'),
-//   },
-// };
-
-
 const path = require('path');
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const CopyWebpackPlugin = require('copy-webpack-plugin');
-
 const ROOT_DIRECTORY = process.cwd();
 
 module.exports = {
@@ -31,13 +17,6 @@ module.exports = {
     },
     extensions: ['*', '.js', '.vue', '.json']
   },
-  // resolve: { alias: { vue: 'vue/dist/vue.esm.js' } },
-  // devServer: {
-  //   contentBase: path.resolve(ROOT_DIRECTORY, 'build'),
-  //   compress: true,
-  //   port: 3001,
-  //   overlay: true,
-  // },
   devtool: 'cheap-module-eval-source-map',
   module: {
     rules: [
@@ -193,44 +172,6 @@ module.exports = {
           },
         ],
       },
-      // {
-      //   test: /\.s(c|a)ss$/,
-      //   use: [
-      //     'vue-style-loader',
-      //     'css-loader',
-      //     {
-      //       loader: 'sass-loader',
-      //       // Requires sass-loader@^7.0.0
-      //       options: {
-      //         implementation: require('sass'),
-      //         fiber: require('fibers'),
-      //         indentedSyntax: true // optional
-      //       },
-      //       // Requires sass-loader@^8.0.0
-      //       options: {
-      //         implementation: require('sass'),
-      //         sassOptions: {
-      //           fiber: require('fibers'),
-      //           indentedSyntax: true // optional
-      //         },
-      //       },
-      //     },
-      //   ],
-      // },
     ],
   },
-  // plugins: [
-  //   new HtmlWebpackPlugin({
-  //     template: path.resolve(ROOT_DIRECTORY, 'src/index.html'),
-  //     filename: 'index.html',
-  //   }),
-  //   new CopyWebpackPlugin({
-  //     patterns: [
-  //       { 
-  //         from: path.resolve(__dirname, '../src', 'assets'),
-  //         to: 'assets' 
-  //       },
-  //     ],
-  //   }),
-  // ],
 };
