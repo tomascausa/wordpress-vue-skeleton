@@ -1,0 +1,58 @@
+{
+  "name": "pulpaestudio",
+  "version": "1.0.0",
+  "description": "Pulpa Estudio custom package bundle",
+  "private": true,
+  "scripts": {
+    "start": "webpack --watch --config=config/webpack.config.js",
+    "build": "webpack --config=config/webpack.config.js"
+  },
+  "author": "Tomas Causa",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.8.3",
+    "@babel/plugin-proposal-optional-chaining": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "compression-webpack-plugin": "^3.1.0",
+    "copy-webpack-plugin": "^6.0.3",
+    "css-loader": "^3.4.2",
+    "deepmerge": "^4.2.2",
+    "fibers": "^5.0.0",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.0.4",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-flexbugs-fixes": "^4.2.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-safe-parser": "^4.0.2",
+    "resolve-url-loader": "^3.1.1",
+    "sass": "^1.26.10",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3",
+    "terser-webpack-plugin": "^2.3.5",
+    "url-loader": "^4.0.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.9.2",
+    "@mdi/font": "^5.5.55",
+    "core-js": "^3.6.4",
+    "lodash": "^4.17.20",
+    "moment": "^2.27.0",
+    "vue": "^2.6.12",
+    "vuetify": "^2.3.10"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ]
+}
